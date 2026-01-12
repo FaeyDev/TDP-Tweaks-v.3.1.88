@@ -1,0 +1,18 @@
+# Build.prop tweaks
+
+# Zygisk Preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
+
+# slow down our wifi scanning
+wifi.supplicant_scan_interval=300
+
+# Less Buffering
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=false
+
+# force multithreading
+persist.sys.dalvik.multithread=true
